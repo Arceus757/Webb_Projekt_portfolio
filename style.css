@@ -260,7 +260,10 @@
 
     img {
       max-width: 100%;
+      margin-bottom: 10px;
+      margin-top: 25px;
     }
+
 
     /* ASIDE */
 .content-panel {
@@ -308,11 +311,61 @@
 .container1 {
   background-color: 0;
   padding: 0;
+  display: flex;
+  
 }
 
 .container1:hover {
   background-color: #798f86;
 }
+
+/*GitHub*/
+.Github {
+  text-align: center;
+
+  color: #000000;
+}
+
+.Github:hover {
+
+  border-bottom: 1px solid #1a573a;
+  color: #276c3e;
+  background: linear-gradient(1000deg,#c4c3d3, transparent);
+}
+
+/* responsive */
+@media screen and (max-width: 1200px) {
+  nav{
+      grid-column: span 3;
+      border-right: 0;
+      border-bottom: 1px solid #ddd;
+  }
+  nav li {
+      display: inline-block;
+      margin-right: 10px;
+  }
+  article {
+      grid-column: span 2;
+
+  }
+  aside {
+      padding: span 16px;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  nav, article, aside {
+      grid-column: span 3;
+  }
+  aside {
+      border-left: 0;
+      border-top: 1px solid #ddd;
+  }
+  article h2 {
+      font-size: 2.5em;
+  }
+}
+
 
 
 
